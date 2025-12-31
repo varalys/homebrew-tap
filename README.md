@@ -17,7 +17,7 @@ brew install varalys/tap/redactyl
 ```
 Available Formulae
 
-**Redactyl**
+### **Redactyl**
 
 Deep artifact scanner for secrets in containers, Helm charts, and K8s manifests.
 ```
@@ -27,7 +27,7 @@ Usage:
 ```
 redactyl scan --helm --k8s -p ./my-project
 ```
-**Lore**
+### **Lore**
 
 Captures AI coding sessions and links them to git commits.
 ```
