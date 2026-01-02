@@ -2,7 +2,7 @@ class Lore < Formula
     desc "Capture AI coding sessions and link them to git commits"
     homepage "https://github.com/varalys/lore"
     url "https://github.com/varalys/lore/archive/refs/tags/v0.1.1.tar.gz"
-    sha256 "db11b562dd96dce2a2871de821ca17931175c65cf7bc66a38c2a16df95e58aee"
+    sha256 "34897c1125b61874128eae954c0bb9551705ce8c70be4b4bf8c81785d4070a9e"
     license "MIT"
 
     depends_on "rust" => :build
