@@ -7,22 +7,22 @@ class Lore < Formula
   on_macos do
     on_arm do
       url "https://github.com/varalys/lore/releases/download/v0.1.7/lore-aarch64-apple-darwin.tar.gz"
-      sha256 "3b27e5fcc9b6b0930573cd2dd9551bd77eccaa1503bf9dba08342d94afc421b9"
+      sha256 "8c74bb845a43e87f35973245f8f432708a93f8eaf6cca2e3926899a87392a674"
     end
     on_intel do
       url "https://github.com/varalys/lore/releases/download/v0.1.7/lore-x86_64-apple-darwin.tar.gz"
-      sha256 "0e58ba86a6874a079722da2f5f4764fcbb03c0f6d05e106affb18a7bd9af918c"
+      sha256 "314288391adf912807d9f0fb5f84823e50b87a75f7043b2e32bc9a4fc5fd8804"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/varalys/lore/releases/download/v0.1.7/lore-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "30334ee58d03681ae16d15a874cb6a9df09a17acb16f6c532c66e2d3b5a774f5"
+      sha256 "9aaee8c4d5c9f873f1189b5f3804d5de44dea2cd7aae4db79caaa9fdf696cae1"
     end
     on_intel do
       url "https://github.com/varalys/lore/releases/download/v0.1.7/lore-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "cb13293309ffbb9c47b24f819c3cd7745b060b4c4fca47f2ccdc8cf5dc51d60f"
+      sha256 "1febfe142bf744f2461371f1db1d38be6550f87b03750036c143ee9da9b523e1"
     end
   end
 
@@ -40,10 +40,8 @@ class Lore < Formula
 
   def caveats
     <<~EOS
-      Run this first to configure lore:
+      To get started, run:
         lore init
-
-      The background service will not work until lore init has been run.
     EOS
   end
 
