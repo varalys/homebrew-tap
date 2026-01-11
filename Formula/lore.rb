@@ -30,19 +30,20 @@ class Lore < Formula
       bin.install "lore"
     end
 
-    def post_install
-      # Restart daemon if running to pick up new version
-      pid_file = Pathname.new(Dir.home)/".lore"/"daemon.pid"
-      if pid_file.exist?
-        system bin/"lore", "daemon", "stop"
-        system bin/"lore", "daemon", "start"
-      end
+    service do
+      run [opt_bin/"lore", "daemon", "start", "--foreground"]
+      keep_alive true
+      log_path var/"log/lore.log"
+      error_log_path var/"log/lore.log"
+      working_dir HOMEBREW_PREFIX
     end
 
     def caveats
       <<~EOS
-        To get started, run:
+        Run this first to configure lore:
           lore init
+
+        The background service will not work until lore init has been run.
       EOS
     end
 
