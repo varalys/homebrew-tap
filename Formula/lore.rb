@@ -30,6 +30,15 @@ class Lore < Formula
       bin.install "lore"
     end
 
+    def post_install
+      # Restart daemon if running to pick up new version
+      pid_file = Pathname.new(Dir.home)/".lore"/"daemon.pid"
+      if pid_file.exist?
+        system bin/"lore", "daemon", "stop"
+        system bin/"lore", "daemon", "start"
+      end
+    end
+
     def caveats
       <<~EOS
         To get started, run:
