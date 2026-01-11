@@ -30,9 +30,9 @@ class Lore < Formula
     bin.install "lore"
   end
 
-  service do
+service do
     run [opt_bin/"lore", "daemon", "start", "--foreground"]
-    keep_alive true
+    keep_alive crashed: true
     log_path var/"log/lore.log"
     error_log_path var/"log/lore.log"
     working_dir HOMEBREW_PREFIX
