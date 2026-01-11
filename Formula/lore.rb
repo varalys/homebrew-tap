@@ -44,8 +44,6 @@ class Lore < Formula
           lore init
 
         The Homebrew service won't start until init completes.
-        After upgrading, restart the service:
-          brew services restart lore
       EOS
     end
 
