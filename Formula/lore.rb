@@ -1,28 +1,28 @@
 class Lore < Formula
   desc "Capture AI coding sessions and link them to git commits"
   homepage "https://github.com/varalys/lore"
-  version "0.1.9"
+  version "0.1.10"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/varalys/lore/releases/download/v0.1.9/lore-aarch64-apple-darwin.tar.gz"
-      sha256 "5c7d6fd640ad4bd6ef8283aa37136e8155a4f0a60d63c68b43286801d8f0f35a"
+      url "https://github.com/varalys/lore/releases/download/v0.1.10/lore-aarch64-apple-darwin.tar.gz"
+      sha256 "5877fe14420b6548693acafdb555e13604eaa8ffee76af736583b466ba12c63f"
     end
     on_intel do
-      url "https://github.com/varalys/lore/releases/download/v0.1.9/lore-x86_64-apple-darwin.tar.gz"
-      sha256 "aede7b4adb8c8e655bdc8f75bc540aee74ce8d07b001c4da44db57005a52c5a5"
+      url "https://github.com/varalys/lore/releases/download/v0.1.10/lore-x86_64-apple-darwin.tar.gz"
+      sha256 "4ee2f6a86e08b876fda4f57dea5fc428a9b80eefc55d29c6f94d695df8c4804a"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/varalys/lore/releases/download/v0.1.9/lore-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "19141ad73fea68e8f424a004fa79cc60f2f9655aae2b2e9ac4bf18275d8fc6e9"
+      url "https://github.com/varalys/lore/releases/download/v0.1.10/lore-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "038834183f9a6aca4bf673ca85d5a6077892c6eae493816a1bf52c85390fb4fa"
     end
     on_intel do
-      url "https://github.com/varalys/lore/releases/download/v0.1.9/lore-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "087773a417d7396017ffe8ed8791b62fb7c4f90b080934ba29fae8eef439504f"
+      url "https://github.com/varalys/lore/releases/download/v0.1.10/lore-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "2f8eb1563f3ee1d4f7f9b697305781a4001370cb422cb6967e71f673cd31d6bf"
     end
   end
 
